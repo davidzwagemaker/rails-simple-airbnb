@@ -1,0 +1,10 @@
+<h1>Our Flats (<%= Flat.count %>)</h1>
+
+<div class="cards">
+
+  <% @flats.each do |flat| %>
+    <%= render partial: 'card', locals: { flat: flat } %>
+  <% end %>
+
+</div>
+
